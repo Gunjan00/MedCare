@@ -1,0 +1,21 @@
+<ActionBar>
+    <Label text="Medicines"></Label>
+</ActionBar>
+
+<GridLayout>
+    <ListView [medicines]="medicines">
+        <ng-template let-medicine="medicine">
+            <StackLayout>
+                <Label  [text]="medicine.name"></Label>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+    <ActivityIndicator busy="true"  *ngIf="!(medicines || errMess)" width="50" height="50" class="activity-indicator"></ActivityIndicator>
+    <Label *ngIf="errMess" [text]="'Error: ' + errMess"></Label>
+</GridLayout>
+
+
+
+
+
+

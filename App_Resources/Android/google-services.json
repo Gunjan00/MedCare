@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "458787550144",
+    "firebase_url": "https://meds-e2b7c.firebaseio.com",
+    "project_id": "meds-e2b7c",
+    "storage_bucket": "meds-e2b7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458787550144:android:7661e00394f82d9e1bce25",
+        "android_client_info": {
+          "package_name": "org.nativescript.Meds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458787550144-ii9e2r7jh59dbm551pm90ejp6lt713d5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV0rLUklWSc0AxY3apF4UUN_nFhcl1me0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458787550144-ii9e2r7jh59dbm551pm90ejp6lt713d5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

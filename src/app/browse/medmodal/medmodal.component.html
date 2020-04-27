@@ -1,0 +1,23 @@
+<StackLayout class="modal-view-style">    
+    <GridLayout class="m-5" rows="auto auto auto auto" columns="*, *"          
+        [formGroup]="medForm"> 
+        <Label class="h3 m-15" row="0" col="0" text="Medicine Name" textWrap ="true"></Label> 
+        <TextField class="input input-border" id="medText"
+            hint="Enter Medicine Name" [text]=''
+            (textChange)="onNameChange($event)"
+            row="0" col="1" formControlName="name">
+        </TextField> 
+        <Label class="h3 m-15" row="1" col="0" text="Colour" textWrap ="true"></Label> 
+        <TextField class="input input-border" id="colorText"
+            hint="Enter Color of Medicine " [text]=''
+            (textChange)="onColorChange($event)"
+            row="1" col="1" formControlName="color">
+        </TextField> 
+        <Label class="h3 m-15" row="2" col="0" text="Quantity" textWrap ="true"></Label> 
+        <ListPicker  [items]="medArray" selectedIndex="0" (selectedIndexChange)="onQuantityChange($event)" class="picker"
+                class="p-15"  row="2" col="1" formControlName="quantity"></ListPicker>
+        
+    
+        <Button class="btn btn-primary btn-active m-15" row="3" col="0" text="Submit" (tap)="onSubmit()"></Button> 
+    </GridLayout> 
+</StackLayout>
