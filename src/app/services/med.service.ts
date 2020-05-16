@@ -21,13 +21,12 @@ export class MedService {
 
   getMedicines(): Observable<Medicine[]> {
 
-
-
-     return of (this.medCollection.get());
-     console.log(this.medCollection.get();
+    return this.medCollection.onSnapshot((snapshot: firestore.QuerySnapshot) => {
+  snapshot.forEach(medicine => console.log(medicine.data()));
+});
+     
     
-  }
-
+  }  
  
 
 }
